@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roger Paredes' personal portfolio">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="index.js" defer></script>
+    <title>Contact - Roger Paredes</title>
+</head>
+<body>
+    <h4 id="portfoliotitle">PORTFOLIO <span>2023</span> </h4>
+    <header>
+        <div id="profilepic"><a href="index.html"><img src="images/header-profilepic.jpg" alt="Roger Paredes Pic" title="HOME"></a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>           
+                <li><a href="about.html">About</a></li>
+                <li><button id="portfoliobtn" type="button" onclick="dropdownmenu()">Portfolio</button>
+                    <ul id="dropdown">
+                        <li><a href="portfoliovideo.html">Content Creation</a></li>
+                        <li><a href="portfoliodesign.html">Graphic Design</a></li>
+                        <li><a href="portfolioweb.html">Web & IT</a></li>
+                    </ul>
+                </li>
+                <li><a class="currentpage" href="">Contact</a></li>
+            </ul>
+        </nav>
+       
+        <div id="subtitles">
+            <h1 class="name">Roger <span>Paredes</span></h1>
+            <ul>
+                <li><span>//</span> Graphic Designer</li>
+                <li><span>//</span> Content Creator</li>
+                <li><span>//</span> Activist</li>
+                <li><span>//</span> IT Student</li>
+            </ul>
+        </div>
+
+    </header>
+    
+    <main class="container">
+        <section id="title">
+            <h3>>CONTACT<span>/////</span></h3>
+            
+        </section>
+        <section class="aboutcontent">
+            <h5>Send me a message</h5>
+            <p> I'll do my best to respond.
+
+                <form action="submit_email.php" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <br><br>
+                    <input id="resume" type="submit" value="Submit">
+                </form>
+
+                <br><br>
+                
+                <div class="socialmedia">
+                <div class="socialmediaicon"><a href="https://www.instagram.com/bipedorasurado/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></div>
+                <div class="socialmediaicon"><a href="https://www.linkedin.com/in/roger-paredes-294aa1119/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></div>
+                </div>
+               
+            </p>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>
+            © ROGER PAREDES 2023
+        </p>
+    </footer>
+    
+    <!-- <div id="background"><img src="images/xraybackground.jpg" alt=""></div> -->
+    <div class="video_contain">
+        <video autoplay muted loop id="myVideo">
+            <source src="video/BackgroundVideo.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
