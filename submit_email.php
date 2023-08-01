@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "Thank you for your message. I try to get back to you soon!";
     } else {
         // Failed to send email
-        echo "Oops! Something went wrong. Please try again.";
+        echo "Oops! Something went wrong. Please try again or email Roger at rparedes@costra.ec";
     }
 }
 ?>
