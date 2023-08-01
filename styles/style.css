@@ -127,7 +127,6 @@ h4#portfoliotitle span{
         margin-top: 0;
         padding-top: 0;
         border-left: 1px solid #4c4c4c;  
-        
     }
 
     nav ul li a{
@@ -138,7 +137,6 @@ h4#portfoliotitle span{
         text-decoration: none;
         color: #1c1c1c;
         /* border-left: 1px solid #4c4c4c;   */
-        
     }
 
     nav ul li a:hover, #portfoliobtn:hover, #portfoliobtncurrent:hover{
@@ -245,7 +243,7 @@ h4#portfoliotitle span{
     padding: 0;
     margin: -10px 20px 0 0;
 }
-/*MAIN ABOUT*/
+/*MAIN*/
 .container{
     margin: 20px auto;
     width: 75%;
@@ -356,7 +354,6 @@ h3 span{
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        
     }
 
     .portexample{
@@ -429,10 +426,6 @@ h3 span{
         cursor: pointer;
     }
 
-
-
-
-
 footer p {
     text-align: center;
     color: #4c4c4c;
@@ -441,6 +434,21 @@ footer p {
 
 @media only screen and (max-width: 900px){
     
+    .homecontainer #hometitle{
+        margin: 5px 5px 0 10px;
+        padding-top: 5px;
+    }
+
+    .homecontainer h3{
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        text-align: left;
+        padding-right: 5px;
+        margin: -10px 0px 0 0;
+        float: right;
+        /*had to flat this to get it aligned when turned vertical ugh!!*/
+    }
+
     h4#portfoliotitle{
         margin-top: 4%;
         margin-bottom: -15px;
@@ -454,19 +462,28 @@ footer p {
     .container{
         margin: 10px auto;
         width: 85%;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 4fr;
         grid-gap: 5px;
-                             
     }
-    h3{
-        writing-mode: vertical-rl;
-        text-orientation: sideways;
-        margin: 0 10px 0 0;
-        
+
+    .container #title h3{
+        margin: 0px 20px 0 0;
     }
+
+    .aboutcontent{
+        padding: 20px 15px;
+        max-width: none;
+    }
+
+    .portfoliocontent{
+        padding: 20px 15px;
+    }
+
 }
 
 @media only screen and (max-width: 650px){
+
+    
     h4#portfoliotitle{
         margin: 4% 18px -16px;
         font-size: 2.8em;
@@ -529,22 +546,15 @@ footer p {
         width: 95%;
     }
 
-    .homecontainer #title h3{
-        writing-mode: vertical-rl;
-        text-orientation: sideways;
-        font-size: 4em;
-        font-weight: 400;
-        color: #fff;
-        text-align: left;
-        margin: 0;
-        padding: 0;
-        margin: -10px 20px 0 0;
-    
+
+    .homecontent{
+        padding: 20px 15px;
     }
+
     .container{
         margin: 0 0 0 -50px;
-        padding: 0;
-        width: 95%;
+        width: 110%;
+
     }
 
     .portexample{
@@ -569,7 +579,14 @@ footer p {
         display: none;
         flex-direction: column;
     }
+    
+    .aboutcontent h5, .portfoliocontent h5, .homecontent h5{
+        font-size: 1.2em;
+    }
 
+    .aboutcontent img{
+        margin: 5px 0;
+    }
 
 }
 
