@@ -180,8 +180,6 @@ h4#portfoliotitle span {
         color: #ff8200;
     }
 
-
-
     #dropdown{
         position: absolute;
         top: 36px;
@@ -588,22 +586,12 @@ footer p {
         margin: 5px 0;
     }
 
+/* RESPONSIVE BACKGROUND remove video */
+    .video_contain{
+        display: none;
+    }
+
 }
 
-/* RESPONSIVE BACKGROUND change to flat image
 
- #background{
-    overflow: hidden;
-    top: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;    
-}
-#background img{
-    position: absolute;
-    width: 100%;
-    object-fit: center;
-} */
+ 
