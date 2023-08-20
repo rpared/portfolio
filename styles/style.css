@@ -48,7 +48,7 @@ h4#portfoliotitle span {
         grid-template-columns: auto 1fr;
         grid-template-areas: "pic nav"
                              "pic subtitles";
-        box-shadow: inset 0px -5px 5px rgba(0,0,0,0.5);
+        box-shadow: 0px -5px 10px rgba(0,0,0,0.5);
     }
 
     header #profilepic {
@@ -200,7 +200,7 @@ h4#portfoliotitle span {
 
         #dropdown li a:hover{
             display: block;
-            background-color: #616161;
+            background-color: #404040;
             font-size: 1em;
             font-weight: 400;
             padding: 6px;
@@ -362,6 +362,7 @@ h3 span{
         margin: 10px;
         border-radius: 5px;
         position: relative;
+        cursor: pointer;
     }
     .portexample img{
         width: 100%;
@@ -394,6 +395,83 @@ h3 span{
         position: relative;
         top: 3px;
     }
+    
+    /* PORTFOLIO POPUPS */
+    #port-popup{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: #0000008d;
+        justify-content: center;
+        align-items: center;
+    }
+    .popup-controls{
+        position: relative;
+        max-width: 80%;
+        border: 10px solid #fff;  
+        background-color: #fff;
+        border-radius: 4px;
+        z-index: 11;
+        box-shadow: 0 0 20px #1e1e1e;
+    }
+
+    .popup-content img{
+        max-width: 100%; 
+    }
+
+    .popup-controls button{
+        position: absolute;
+        border-radius: 2px;
+        cursor: pointer;
+        color: #4c4c4c;
+        border: none;
+        background-color: #ffffff;
+    }
+
+    .popup-controls #closebtn{
+        top: 1.8%;
+        right: -0.5%;
+        padding: 1px 22px 3px 8px;
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .popup-controls #next{
+        top: 45%;
+        right: -2px;
+        height: 15%;
+        width: 4%;
+        font-size: 32px;
+    }
+
+    .popup-controls #prev{
+        top: 45%;
+        left: -2px;
+        height: 15%;
+        width: 4%;
+        font-size: 32px;
+    }
+
+    .popup-controls #next:hover, .popup-controls #prev:hover{
+        color: #ff8200;
+        width: 5%;
+    }
+
+    .popup-controls #closebtn:hover{
+        color: #ff8200;
+        box-shadow: -4px 5px 3px #0000001f;
+        width: 6%;
+    }
+
+
+    /* .popup-controls #closebtn:hover ~ .popimg {
+        opacity: 0.5;
+        filter: grayscale(1); 
+    } */
 
 /* CONTACT */
 
@@ -477,6 +555,23 @@ footer p {
         padding: 20px 15px;
     }
 
+    .popup-controls{
+        border: 4px solid #fff; 
+    }
+
+    .popup-controls #closebtn:hover{
+        width: 7%;
+    }
+
+    .popup-controls #next{
+        font-size: 25px;
+    }
+
+    .popup-controls #prev{
+        font-size: 25px;
+    }
+
+
 }
 
 @media only screen and (max-width: 650px){
@@ -529,7 +624,6 @@ footer p {
         margin: 10px 0 10px -60px;
         padding: 8px 15px;
         background-color: #1c1c1c;
-
     }
     
     header #subtitles ul li{
@@ -543,7 +637,6 @@ footer p {
         padding: 0;
         width: 95%;
     }
-
 
     .homecontent{
         padding: 20px 15px;
@@ -585,6 +678,40 @@ footer p {
     .aboutcontent img{
         margin: 5px 0;
     }
+
+    .popup-controls{
+        border: 4px solid #fff; 
+        max-width: 90%;
+    }
+
+    .popup-controls #closebtn{
+        padding: 1px 14px 3px 8px;
+        font-size: 20px;  
+    }
+
+    .popup-controls #next{
+        top: 40%;
+        height: 18%;
+        width: 5%;
+        font-size: 22px;
+    }
+
+    .popup-controls #prev{
+        top: 40%;
+        height: 18%;
+        width: 5%;
+        font-size: 22px;
+    }
+
+    .popup-controls #next:hover, .popup-controls #prev:hover{
+        width: 7%;
+    }
+
+
+    .popup-controls #closebtn:hover{
+        width: 9%;
+    }
+
 
 /* RESPONSIVE BACKGROUND remove video */
     .video_contain{
