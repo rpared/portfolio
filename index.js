@@ -21,11 +21,17 @@ let popUpImg = document.querySelector(".popimg");
 let nextBtn = document.querySelector("#next");
 let prevBtn = document.getElementById("prev");
 let portMode;
-let mardis1 = "images/portfoliolargepics/mardis1.png";
 
-
+// CLOSE BUTTON
 document.getElementById("closebtn").addEventListener("click", function(){
-    popUp.style.display = "none";
+    popUp.style.display = "none"; 
+});
+
+// PORTFOLIO BUTTONS
+document.getElementById("rcbbtn").addEventListener("click", function(){
+    popUp.style.display = "flex";
+    portMode = "rcb";
+    popUpImg.src = "images/portfoliolargepics/rcb1.png";
 });
 
 document.getElementById("yachaybtn").addEventListener("click", function(){
@@ -100,6 +106,18 @@ document.getElementById("rumibtn").addEventListener("click", function(){
 
 // Pop Up Buttons Functions
 function nextSlide(){
+    if (portMode == "rcb"){
+        if (popUpImg.src.endsWith("rcb1.png")){
+        popUpImg.src = "images/portfoliolargepics/rcb2.png";
+        } else if (popUpImg.src.endsWith("rcb2.png")){
+        popUpImg.src = "images/portfoliolargepics/rcb3.png";
+        } else if (popUpImg.src.endsWith("rcb3.png")){
+        popUpImg.src = "images/portfoliolargepics/rcb4.png";
+        } else if (popUpImg.src.endsWith("rcb4.png")){
+            popUpImg.src = "images/portfoliolargepics/rcb1.png";
+            }
+    };
+
     if (portMode == "yachay"){
         if (popUpImg.src.endsWith("yachay1.png")){
         popUpImg.src = "images/portfoliolargepics/yachay2.png";
@@ -124,11 +142,11 @@ function nextSlide(){
 
     if (portMode == "apex"){
         if (popUpImg.src.endsWith("apex1.png")){
-        popUpImg.src = apex2;
+        popUpImg.src = "images/portfoliolargepics/apex2.png";
         } else if (popUpImg.src.endsWith("apex2.png")){
-        popUpImg.src = apex3;
+        popUpImg.src = "images/portfoliolargepics/apex3.png";
         } else if (popUpImg.src.endsWith("apex3.png")){
-        popUpImg.src = apex1;
+        popUpImg.src = "images/portfoliolargepics/apex1.png";
         }
     };
 
@@ -193,7 +211,21 @@ function nextSlide(){
 
 };
 
+// PREV BUTTON
+
 prevBtn.addEventListener("click", function(){
+    if (portMode == "rcb"){
+        if (popUpImg.src.endsWith("rcb1.png")){
+        popUpImg.src = "images/portfoliolargepics/rcb4.png";
+        } else if (popUpImg.src.endsWith("rcb4.png")){
+        popUpImg.src = "images/portfoliolargepics/rcb3.png";
+        } else if (popUpImg.src.endsWith("rcb3.png")){
+        popUpImg.src = "images/portfoliolargepics/rcb2.png";
+        } else if (popUpImg.src.endsWith("rcb2.png")){
+            popUpImg.src = "images/portfoliolargepics/rcb1.png";
+            }
+        }
+
     if (portMode == "yachay"){
         if (popUpImg.src.endsWith("yachay1.png")){
         popUpImg.src = "images/portfoliolargepics/yachay4.png";
@@ -208,11 +240,11 @@ prevBtn.addEventListener("click", function(){
 
     if (portMode == "apex"){
         if (popUpImg.src.endsWith("apex1.png")){
-        popUpImg.src = apex3;
+        popUpImg.src = "images/portfoliolargepics/apex3.png";
         } else if (popUpImg.src.endsWith("apex3.png")){
-        popUpImg.src = apex2;
+        popUpImg.src = "images/portfoliolargepics/apex2.png";
         } else if (popUpImg.src.endsWith("apex2.png")){
-        popUpImg.src = apex1;
+        popUpImg.src = "images/portfoliolargepics/apex1.png";
         }
     };
     if (portMode == "mardis"){
