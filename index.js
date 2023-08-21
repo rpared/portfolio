@@ -22,16 +22,52 @@ let nextBtn = document.querySelector("#next");
 let prevBtn = document.getElementById("prev");
 let portMode;
 
+
+
+
+
 // CLOSE BUTTON
 document.getElementById("closebtn").addEventListener("click", function(){
-    popUp.style.display = "none"; 
+    popUp.style.display = "none";
+    nextBtn.style.display = "block";
+    prevBtn.style.display = "block";
+    document.querySelector("#player").style.display = "none";
+    document.getElementById("player").innerHTML = `<iframe width="650px" height="480px"src=""></iframe>` ;
+
 });
 
 // PORTFOLIO BUTTONS
+function costravid(){
+    popUp.style.display = "flex";
+    nextBtn.style.display = "none";
+    prevBtn.style.display = "none";
+    document.getElementById("player").style.display = "flex";
+    portMode = "costravid";
+    popUpImg.src = "";
+    popUpImg.alt = "";
+    document.getElementById("player").innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/olBVt3xlsTA?controls=1"></iframe>` ;
+
+}
+// document.getElementById("costravidbtn").addEventListener("click", function(){
+//     popUp.style.display = "flex";
+//     document.getElementById("player").style.display = "flex";
+//     portMode = "costravid";
+//     popUpImg.src = "", alt = "";
+//     nextBtn.display = "none";
+//     document.getElementById("player").src = "https://www.youtube.com/embed/olBVt3xlsTA?controls=1";
+// });
+
+
+
+
+
+
+
 document.getElementById("rcbbtn").addEventListener("click", function(){
     popUp.style.display = "flex";
     portMode = "rcb";
     popUpImg.src = "images/portfoliolargepics/rcb1.png";
+    
 });
 
 document.getElementById("yachaybtn").addEventListener("click", function(){
@@ -316,10 +352,4 @@ prevBtn.addEventListener("click", function(){
     };
     
 });
-
-
-
-//   document.getElementById("mardisbtn").addEventListener("click", function() {
-//     popUp.innerHTML = mardis1;
-//   });
 
