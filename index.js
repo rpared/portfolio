@@ -79,22 +79,6 @@ document.getElementById("rumibtn").addEventListener("click", function(){
     popUpImg.src = "images/portfoliolargepics/rumi1.png"; 
 });
 
-
-// Styles for Pop up Buttons
-    nextBtn.addEventListener("mouseover", function(){
-        document.querySelector(".popup-controls").style.filter = "grayscale(1)";
-    }, false);
-    nextBtn.addEventListener("mouseout", function(){
-        document.querySelector(".popup-controls").style.filter = "none";
-    }, false);
-
-    prevBtn.addEventListener("mouseover", function(){
-        document.querySelector(".popup-controls").style.filter = "grayscale(1)";
-    }, false);
-    prevBtn.addEventListener("mouseout", function(){
-        document.querySelector(".popup-controls").style.filter = "none";
-    }, false);
-
 // Pop Up Buttons Functions
 function nextSlide(){
     if (portMode == "apex"){
