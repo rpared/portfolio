@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: rgb(37, 37, 37);
     font-family:'Ubuntu';
     color: #1c1c1c;
 }
@@ -22,6 +22,8 @@ body {
     right: 0;
     left: 0;
     margin: auto;
+    filter: contrast(70%);
+    -webkit-filter: contrast(70%);
   }
 
 
@@ -136,7 +138,7 @@ h4#portfoliotitle span {
         font-size: 1.2em;
         font-weight: 700;
         text-decoration: none;
-        color: #1c1c1c;
+        color: rgb(37, 37, 37);
         /* border-left: 1px solid #4c4c4c;   */
     }
 
@@ -628,7 +630,9 @@ footer p {
         grid-area: subtitles;
         margin: 10px 0 10px -60px;
         padding: 8px 15px;
-        background-color: #1c1c1c;
+        background-color: rgb(37, 37, 37);
+        border-top: 2px solid #a3a3a3;
+        box-shadow: -5px 5px 10px #000;
     }
     
     header #subtitles ul li{
