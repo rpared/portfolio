@@ -449,6 +449,7 @@ h3 span{
         height: 15%;
         width: 4%;
         font-size: 32px;
+        text-align: center;
     }
 
     .popup-controls #prev{
@@ -457,11 +458,19 @@ h3 span{
         height: 15%;
         width: 4%;
         font-size: 32px;
+        text-align: center;
     }
 
-    .popup-controls #next:hover, .popup-controls #prev:hover{
+    .popup-controls #next:hover{
         color: #ff8200;
         width: 5%;
+        box-shadow: -4px 5px 3px #0000001f;
+    }
+
+    .popup-controls #prev:hover{
+        color: #ff8200;
+        width: 5%;
+        box-shadow: 4px 5px 3px #0000001f;
     }
 
     .popup-controls #closebtn:hover{
@@ -474,6 +483,9 @@ h3 span{
         display: none;
     }
 
+    .js-is-hidden {
+        display: none;
+      }
 
     /* .popup-controls #closebtn:hover ~ .popimg {
         opacity: 0.5;
@@ -695,25 +707,23 @@ footer p {
 
     .popup-controls #closebtn{
         padding: 1px 14px 3px 8px;
-        font-size: 20px;  
+        font-size: 22px;  
     }
 
     .popup-controls #next{
         top: 40%;
-        height: 18%;
-        width: 5%;
-        font-size: 22px;
+        height: 20%;
+        width: 6.5%;
     }
 
     .popup-controls #prev{
         top: 40%;
-        height: 18%;
-        width: 5%;
-        font-size: 22px;
+        height: 20%;
+        width: 6.5%;
     }
 
     .popup-controls #next:hover, .popup-controls #prev:hover{
-        width: 7%;
+        width: 8%;
     }
 
 
