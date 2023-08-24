@@ -206,7 +206,6 @@ h4#portfoliotitle span {
             background-color: #404040;
             font-size: 1em;
             font-weight: 400;
-            padding: 6px;
             color:#ff8200;
             top: 0;
         }
@@ -366,10 +365,11 @@ h3 span{
         border-radius: 5px;
         position: relative;
         cursor: pointer;
+        overflow: hidden;
     }
     .portexample img{
         width: 100%;
-        
+        object-fit: contain;
     }
     .portfoliocase p {
         padding: 10px;
@@ -529,6 +529,12 @@ footer p {
 
 @media only screen and (max-width: 900px){
     
+    #dropdown li a:hover{
+        color: #ff8200;
+        position: relative;
+        top: 0px; 
+    }
+
     .homecontainer #hometitle{
         margin: 5px 5px 0 10px;
         padding-top: 5px;
@@ -681,16 +687,26 @@ footer p {
     
     #dropdown{
         position: absolute;
-        top: 80px;
-        left: 115px;
+        top: 76px;
+        left: 116px;
         width: max-content;
-        border: 1px solid #ff8200;
-        padding: 6px 0;
+        border: 1px solid #9f9f9f;
+        padding:  0;
         background-color: #1c1c1c;
         color: #9f9f9f;
         display: none;
         flex-direction: column;
+        box-shadow: 0 2px 3px #1e1e1e;
     }
+
+    #dropdown li a{
+        display: block;
+        font-size: 1em;
+        font-weight: 400;
+        padding: 13px 7px;
+        color: #9f9f9f;
+    }
+
     
     .aboutcontent h5, .portfoliocontent h5, .homecontent h5{
         font-size: 1.2em;
