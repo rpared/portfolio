@@ -15,15 +15,13 @@ function dropdownmenu(){
     }
 }
 
-let popUp = document.getElementById("port-popup");
-let popUpContent = document.querySelector(".popup-content");
+//PORTFOLIO Pop Up 
+var popUp = document.querySelector("#port-popup");
+let popUpContent = document.querySelector("#popup-content");
 let popUpImg = document.querySelector(".popimg");
 let nextBtn = document.querySelector("#next");
 let prevBtn = document.getElementById("prev");
 let portMode;
-
-
-
 
 
 // CLOSE BUTTON
@@ -353,3 +351,26 @@ prevBtn.addEventListener("click", function(){
     
 });
 
+
+//Couldnt get this code to hide pop ups when clicked ouside the box!!
+//let popUp1 = document.getElementById("port-popup");
+// Detect all clicks on the document
+//const popUpContent1 = document.querySelector(".popup-content");
+// document.addEventListener("click", function(event){
+// // If user clicks inside the element, do nothing
+// if(event.target.closest(".popup-content")) return;
+// // If user clicks outside the element, hide it!
+// else if (event.target.closest(".popup-content") == false)
+// popUp.style.display = "none";
+// popUp.classList.add("js-is-hidden");
+// })
+
+
+// window.onload = function(){
+
+// document.onclick = function(hidepop){
+//     if(hidepop.target.id !== "popup-content"){
+//         popUp.style.display = "none";
+//     }
+// };
+// };
