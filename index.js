@@ -352,25 +352,14 @@ prevBtn.addEventListener("click", function(){
 });
 
 
-//Couldnt get this code to hide pop ups when clicked ouside the box!!
-//let popUp1 = document.getElementById("port-popup");
-// Detect all clicks on the document
-//const popUpContent1 = document.querySelector(".popup-content");
-// document.addEventListener("click", function(event){
-// // If user clicks inside the element, do nothing
-// if(event.target.closest(".popup-content")) return;
-// // If user clicks outside the element, hide it!
-// else if (event.target.closest(".popup-content") == false)
-// popUp.style.display = "none";
-// popUp.classList.add("js-is-hidden");
-// })
-
-
-// window.onload = function(){
-
-// document.onclick = function(hidepop){
-//     if(hidepop.target.id !== "popup-content"){
-//         popUp.style.display = "none";
-//     }
-// };
-// };
+// If user clicks outside the popup-controls element, hide it!
+    popUp.addEventListener("click", function(event) {
+        if (!event.target.closest("#popup-controls")) {
+            console.log("click");
+            popUp.style.display = "none";
+            document.querySelector("#player").style.display = "none";
+            nextBtn.style.display = "block";
+    prevBtn.style.display = "block";
+        }
+    });
+    
