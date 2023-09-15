@@ -631,7 +631,7 @@ footer p {
         padding: 0 0 0 20px;
         grid-template-areas: "pic nav"
                              "subtitles";
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
     nav{
         width: 100%;
