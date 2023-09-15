@@ -55,6 +55,13 @@ document.getElementById("rcbbtn").addEventListener("click", function(){
     
 });
 
+document.getElementById("equinoctialbtn").addEventListener("click", function(){
+    popUp.style.display = "flex";
+    portMode = "equinoctial";
+    popUpImg.src = "images/portfoliolargepics/equinoctial1.png";
+    
+});
+
 document.getElementById("yachaybtn").addEventListener("click", function(){
     popUp.style.display = "flex";
     portMode = "yachay";
@@ -67,10 +74,11 @@ document.getElementById("apexbtn").addEventListener("click", function(){
     popUpImg.src = "images/portfoliolargepics/apex2.png"; 
 });
 
-document.getElementById("mardisbtn").addEventListener("click", function(){
+document.getElementById("purebtn").addEventListener("click", function(){
     popUp.style.display = "flex";
-    portMode = "mardis";
-    popUpImg.src = "images/portfoliolargepics/mardis1.png"; 
+    portMode = "pure";
+    popUpImg.src = "images/portfoliolargepics/pure1.png";
+    
 });
 
 document.getElementById("age-resurgencebtn").addEventListener("click", function(){
@@ -83,6 +91,19 @@ document.getElementById("pantallabtn").addEventListener("click", function(){
     popUp.style.display = "flex";
     portMode = "pantalla";
     popUpImg.src = "images/portfoliolargepics/pantalla1.png"; 
+});
+
+document.getElementById("investmentbtn").addEventListener("click", function(){
+    popUp.style.display = "flex";
+    portMode = "investment";
+    popUpImg.src = "images/portfoliolargepics/investment1.png";
+    
+});
+
+document.getElementById("mardisbtn").addEventListener("click", function(){
+    popUp.style.display = "flex";
+    portMode = "mardis";
+    popUpImg.src = "images/portfoliolargepics/mardis1.png"; 
 });
 
 document.getElementById("seastarbtn").addEventListener("click", function(){
@@ -122,6 +143,7 @@ function nextSlide(){
             popUpImg.src = "images/portfoliolargepics/produ1.png";
             }
     };
+
     if (portMode == "rcb"){
         if (popUpImg.src.endsWith("rcb1.png")){
         popUpImg.src = "images/portfoliolargepics/rcb2.png";
@@ -132,6 +154,14 @@ function nextSlide(){
         } else if (popUpImg.src.endsWith("rcb4.png")){
             popUpImg.src = "images/portfoliolargepics/rcb1.png";
             }
+    };
+
+    if (portMode == "equinoctial"){
+        if (popUpImg.src.endsWith("equinoctial1.png")){
+        popUpImg.src = "images/portfoliolargepics/equinoctial2.png";
+        } else if (popUpImg.src.endsWith("equinoctial2.png")){
+        popUpImg.src = "images/portfoliolargepics/equinoctial1.png";
+        }
     };
 
     if (portMode == "yachay"){
@@ -146,6 +176,14 @@ function nextSlide(){
             }
     };
 
+    if (portMode == "pure"){
+        if (popUpImg.src.endsWith("pure1.png")){
+        popUpImg.src = "images/portfoliolargepics/pure2.png";
+        } else if (popUpImg.src.endsWith("pure2.png")){
+        popUpImg.src = "images/portfoliolargepics/pure1.png";
+        }
+    };
+
     if (portMode == "mardis"){
         if (popUpImg.src.endsWith("mardis1.png")){
         popUpImg.src = "images/portfoliolargepics/mardis2.png";
@@ -153,6 +191,16 @@ function nextSlide(){
         popUpImg.src = "images/portfoliolargepics/mardis1.png";
         } else if (popUpImg.src.endsWith("mardis2.png")){
         popUpImg.src = "images/portfoliolargepics/mardis3.png";
+        }
+    };
+
+    if (portMode == "investment"){
+        if (popUpImg.src.endsWith("investment1.png")){
+        popUpImg.src = "images/portfoliolargepics/investment2.png";
+        } else if (popUpImg.src.endsWith("investment3.png")){
+        popUpImg.src = "images/portfoliolargepics/investment1.png";
+        } else if (popUpImg.src.endsWith("investment2.png")){
+        popUpImg.src = "images/portfoliolargepics/investment3.png";
         }
     };
 
@@ -242,6 +290,14 @@ prevBtn.addEventListener("click", function(){
             }
         }
 
+    if (portMode == "equinoctial"){
+        if (popUpImg.src.endsWith("equinoctial2.png")){
+        popUpImg.src = "images/portfoliolargepics/equinoctial1.png";
+        } else if (popUpImg.src.endsWith("equinoctial1.png")){
+        popUpImg.src = "images/portfoliolargepics/equinoctial2.png";
+        }
+    };
+
     if (portMode == "yachay"){
         if (popUpImg.src.endsWith("yachay1.png")){
         popUpImg.src = "images/portfoliolargepics/yachay4.png";
@@ -263,6 +319,7 @@ prevBtn.addEventListener("click", function(){
         popUpImg.src = "images/portfoliolargepics/apex1.png";
         }
     };
+
     if (portMode == "mardis"){
         if (popUpImg.src.endsWith("mardis1.png")){
         popUpImg.src = "images/portfoliolargepics/mardis3.png";
@@ -270,6 +327,14 @@ prevBtn.addEventListener("click", function(){
         popUpImg.src = "images/portfoliolargepics/mardis2.png";
         } else if (popUpImg.src.endsWith("mardis2.png")){
         popUpImg.src = "images/portfoliolargepics/mardis1.png";
+        }
+    };
+
+    if (portMode == "pure"){
+        if (popUpImg.src.endsWith("pure1.png")){
+        popUpImg.src = "images/portfoliolargepics/pure2.png";
+        } else if (popUpImg.src.endsWith("pure2.png")){
+        popUpImg.src = "images/portfoliolargepics/pure1.png";
         }
     };
 
@@ -290,6 +355,16 @@ prevBtn.addEventListener("click", function(){
         popUpImg.src = "images/portfoliolargepics/pantalla2.png";
         } else if (popUpImg.src.endsWith("pantalla2.png")){
         popUpImg.src = "images/portfoliolargepics/pantalla1.png";
+        }
+    };
+
+    if (portMode == "investment"){
+        if (popUpImg.src.endsWith("investment1.png")){
+        popUpImg.src = "iminvestments/portfoliolargepics/investment3.png";
+        } else if (popUpImg.src.endsWith("investment3.png")){
+        popUpImg.src = "iminvestments/portfoliolargepics/investment2.png";
+        } else if (popUpImg.src.endsWith("investment2.png")){
+        popUpImg.src = "iminvestments/portfoliolargepics/investment1.png";
         }
     };
 
