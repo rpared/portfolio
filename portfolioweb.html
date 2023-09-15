@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="index.js" defer></script>
+    <script src="web.js" defer></script>
     <title>Portfolio - Roger Paredes</title>
 </head>
 <body>
@@ -99,18 +99,43 @@
                     </a>
                 </div>
 
-                <div class="portexample">
+                <div class="portexample" >
                     <a href="https://roger.costra.ec" target="_blank">
                     <img src="images/Web_RogersProfile.jpg" alt="Javascrpt Profile">
                     <p>An online single page profile with language and background switches, built with javascript.</p>
                     <div class="specs">HTML + CSS + JAVASCRIPT</div>
                     </a>
                 </div>
+
+                <div class="portexample" id="produbtn" onclick="produ()">
+                    
+                    <img src="images/GDesign_Produbanco.jpg" alt="Flash Tutorial">
+                    <p>Several actionscript tutorials for Produbanco bank applications in Ecuador.</p>
+                    <div class="specs">FLASH + ACTIONSCRIPT</div>
+                    
+                </div>
                 
 
         </div>
 
         </section>
+
+        <div id="port-popup">
+            <div id="popup-controls">
+                <button type="button" id="next" onclick="nextSlide()"> > </button>
+                <button type="button" id="prev" onclick="prevSlide()"> &#60; </button>
+                <button type="button" id="closebtn" title="Close" > x </button>
+            
+                <div id="popup-content" > 
+                    <img class="popimg" src="" alt="Portfolio">
+                </div> 
+                <div id="player">
+                    
+                </div>
+            </div>
+        </div>
+
+
     </main>
     <footer>
         <p>
