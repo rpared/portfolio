@@ -54,10 +54,38 @@ function produ(){
     popUpImg.src = "images/portfoliolargepics/produ1.png"; 
 };
 
+let hangman = () =>{
+    popUp.style.display = "flex";
+    portMode = "hangman";
+    popUp.innerHTML = `
+             <div id="popup-controls">
+                <button type="button" id="closebtn" title="Close" > x </button>
+            
+                <div id="popup-content" > 
+                <a href="https://github.com/rpared/hangmangame.git" target="_blank"> 
+                <img class="popimg" src="images/portfoliolargepics/hangman1.png" alt="Portfolio">
+                </a>
+                </div> 
+                <div id="player">
+                </div>
+            </div>
+    `
+};
+
+document.getElementById("hangmangame").addEventListener("click", hangman);
 
 
 // Pop Up Buttons Functions
 function nextSlide(){
+    if (portMode == "hangman"){
+        if (popUpImg.src.endsWith("hangman1.png")){
+        popUpImg.src = "images/portfoliolargepics/hangman2.png";
+        } else if (popUpImg.src.endsWith("hangman2.png")){
+        popUpImg.src = "images/portfoliolargepics/hangman3.png";
+        } else if (popUpImg.src.endsWith("hangman3.png")){
+            popUpImg.src = "images/portfoliolargepics/hangman1.png";
+            }
+    };
     if (portMode == "produ"){
         if (popUpImg.src.endsWith("produ1.png")){
         popUpImg.src = "images/portfoliolargepics/produ2.png";
@@ -175,6 +203,15 @@ function nextSlide(){
 // PREV BUTTON
 // function for web&It
 function prevSlide(){
+    if (portMode == "hangman"){
+        if (popUpImg.src.endsWith("hangman1.png")){
+        popUpImg.src = "images/portfoliolargepics/hangman3.png";
+        } else if (popUpImg.src.endsWith("hangman3.png")){
+        popUpImg.src = "images/portfoliolargepics/hangman2.png";
+        } else if (popUpImg.src.endsWith("hangman2.png")){
+            popUpImg.src = "images/portfoliolargepics/hangman1.png";
+            }
+        }
     if (portMode == "produ"){
         if (popUpImg.src.endsWith("produ1.png")){
         popUpImg.src = "images/portfoliolargepics/produ3.png";
