@@ -21,18 +21,11 @@ let popUpContent = document.querySelector("#popup-content");
 let popUpImg = document.querySelector(".popimg");
 let nextBtn = document.querySelector("#next");
 let prevBtn = document.getElementById("prev");
+let player = document.getElementById("player");
 let portMode;
 
 
-// CLOSE BUTTON
-document.getElementById("closebtn").addEventListener("click", function(){
-    popUp.style.display = "none";
-    nextBtn.style.display = "block";
-    prevBtn.style.display = "block";
-    document.querySelector("#player").style.display = "none";
-    document.getElementById("player").innerHTML = `<iframe width="650px" height="480px"src=""></iframe>` ;
 
-});
 
 // PORTFOLIO BUTTONS
 function costravid(){
@@ -47,32 +40,42 @@ function costravid(){
 
 }
 
-
 function produ(){
     popUp.style.display = "flex";
     portMode = "produ";
     popUpImg.src = "images/portfoliolargepics/produ1.png"; 
 };
+document.getElementById("produbtn").addEventListener("click", produ);
+
+//This was to link the button to github, but was troublesome
+// let hangman = () =>{
+//     popUp.style.display = "flex";
+//     portMode = "hangman";
+//     popUp.innerHTML = `
+//              <div id="popup-controls">
+//                 <button type="button" id="closebtn" title="Close" > x </button>
+            
+//                 <div id="popup-content" > 
+//                 <a href="https://github.com/rpared/hangmangame.git" target="_blank"> 
+//                 <img class="popimg" src="images/portfoliolargepics/hangman1.png" alt="Portfolio">
+//                 </a>
+//                 </div> 
+//                 <div id="player">
+//                 </div>
+//             </div>
+//     `
+// };
+
 
 let hangman = () =>{
     popUp.style.display = "flex";
     portMode = "hangman";
-    popUp.innerHTML = `
-             <div id="popup-controls">
-                <button type="button" id="closebtn" title="Close" > x </button>
-            
-                <div id="popup-content" > 
-                <a href="https://github.com/rpared/hangmangame.git" target="_blank"> 
-                <img class="popimg" src="images/portfoliolargepics/hangman1.png" alt="Portfolio">
-                </a>
-                </div> 
-                <div id="player">
-                </div>
-            </div>
-    `
+    popUpImg.src = "images/portfoliolargepics/hangman1.png"; 
+    
 };
 
 document.getElementById("hangmangame").addEventListener("click", hangman);
+
 
 
 // Pop Up Buttons Functions
@@ -328,6 +331,15 @@ prevBtn.addEventListener("click", function(){
     
 });
 
+// CLOSE BUTTON
+document.getElementById("closebtn").addEventListener("click", function(){
+    popUp.style.display = "none";
+    nextBtn.style.display = "block";
+    prevBtn.style.display = "block";
+    document.querySelector("#player").style.display = "none";
+    document.getElementById("player").innerHTML = `<iframe width="650px" height="480px"src=""></iframe>` ;
+
+});
 
 // If user clicks outside the popup-controls element, hide it!
     popUp.addEventListener("click", function(event) {
