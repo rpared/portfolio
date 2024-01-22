@@ -84,10 +84,8 @@ function nextSlide(){
         if (popUpImg.src.endsWith("hangman1.png")){
         popUpImg.src = "images/portfoliolargepics/hangman2.png";
         } else if (popUpImg.src.endsWith("hangman2.png")){
-        popUpImg.src = "images/portfoliolargepics/hangman3.png";
-        } else if (popUpImg.src.endsWith("hangman3.png")){
-            popUpImg.src = "images/portfoliolargepics/hangman1.png";
-            }
+        popUpImg.src = "images/portfoliolargepics/hangman1.png";
+        }
     };
     if (portMode == "produ"){
         if (popUpImg.src.endsWith("produ1.png")){
@@ -208,12 +206,10 @@ function nextSlide(){
 function prevSlide(){
     if (portMode == "hangman"){
         if (popUpImg.src.endsWith("hangman1.png")){
-        popUpImg.src = "images/portfoliolargepics/hangman3.png";
-        } else if (popUpImg.src.endsWith("hangman3.png")){
         popUpImg.src = "images/portfoliolargepics/hangman2.png";
         } else if (popUpImg.src.endsWith("hangman2.png")){
-            popUpImg.src = "images/portfoliolargepics/hangman1.png";
-            }
+        popUpImg.src = "images/portfoliolargepics/hangman1.png";
+        }
         }
     if (portMode == "produ"){
         if (popUpImg.src.endsWith("produ1.png")){
