@@ -1,74 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Roger Paredes' personal portfolio">
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Roger Paredes' personal portfolio" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <script src="index.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Roger Paredes</title>
-</head>
-<body>
-    <h4 id="portfoliotitle">PORTFOLIO <span>2024</span> </h4>
+  </head>
+  <body>
+    <h4 id="portfoliotitle">PORTFOLIO <span>2024</span></h4>
     <header>
-        <div id="profilepic"><img src="images/header-profilepic.jpg" alt=""></div>
-        <nav>
-            <ul>
-                <li ><a class="currentpage" href="">Home</a></li>           
-                <li><a href="about.html">About</a></li>
-                <li><button id="portfoliobtn" type="button" onclick="dropdownmenu()">Portfolio</button>
-                    <ul id="dropdown">
-                        <li><a href="portfoliodesign.html">Graphic Design</a></li>
-                        <li><a href="portfoliovideo.html">Content Creation</a></li>
-                        <li><a href="portfolioweb.html">Web & IT</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+      <div id="profilepic">
+        <img src="images/header-profilepic.jpg" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a class="currentpage" href="">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <button id="portfoliobtn" type="button" onclick="dropdownmenu()">
+              Portfolio
+            </button>
+            <ul id="dropdown">
+              <li><a href="portfoliodesign.html">Graphic Design</a></li>
+              <li><a href="portfoliovideo.html">Content Creation</a></li>
+              <li><a href="portfolioweb.html">Web & IT</a></li>
             </ul>
-        </nav>
-       
-        <div id="subtitles">
-            <h1 class="name">Roger <span>Paredes</span></h1>
-            <ul>
-                <li><span>//</span> Graphic Designer</li>
-                <li><span>//</span> Content Creator</li>
-                <li><span>//</span> IT Student</li>
-            </ul>
-        </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
+      <div id="subtitles">
+        <h1 class="name">Roger <span>Paredes</span></h1>
+        <ul>
+          <li><span>//</span> Graphic Designer</li>
+          <li><span>//</span> Content Creator</li>
+          <li><span>//</span> IT Student</li>
+        </ul>
+      </div>
     </header>
-    
+
     <main class="homecontainer">
-        <section id="hometitle">
-            <h3>>HOME<span>/////</span></h3>
-            
-        </section>
-        <section class="homecontent">
-            <h5>"I've done quite a bit, but that bit keeps dwarfing by what I want to do and learn."</h5>
-            <p> Socrates stated it the best way possible: "All I know is that I know nothing." <br>
-                I am on Earth to learn, I believe when you stop learning you start dying, after all we are homo-sapiens, there is no "sapientia" without learning, so I intend to belong to the species for a bit longer.
-                Check out some of my current and past work on content creation, graphic design, web and IT.
-            </p>
-        </section>
+      <section id="hometitle">
+        <h3>>HOME<span>/////</span></h3>
+      </section>
+      <section class="homecontent">
+        <h5>
+          "Whatever I've done keeps dwarfing compared to what I want to do and
+          learn."<span>😅</span>
+        </h5>
+        <p>
+          Socrates stated it the best way possible: "All I know is that I know
+          nothing." <br />
+          I am on Earth to learn, I believe when you stop learning you start
+          dying, after all we are homo-sapiens, there is no "sapientia" without
+          learning, so I intend to belong to the species for a bit longer. Check
+          out some of my current and past work on content creation, graphic
+          design, web and IT.
+        </p>
+      </section>
     </main>
     <footer>
-        <p>
-            © ROGER PAREDES 2024
-        </p>
+      <p>© ROGER PAREDES 2024</p>
     </footer>
 
     <div class="video_contain">
-        <video autoplay muted loop id="myVideo">
-            <source src="video/BackgroundVideo.mp4" type="video/mp4">
-        </video>
+      <video autoplay muted loop id="myVideo">
+        <source src="video/BackgroundVideo.mp4" type="video/mp4" />
+      </video>
     </div>
-
-</body>
+  </body>
 </html>
