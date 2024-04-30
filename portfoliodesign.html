@@ -1,231 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Roger Paredes' personal portfolio">
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Roger Paredes' personal portfolio" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="index.js" defer></script>
     <script src="video.js" defer></script>
     <title>Portfolio - Roger Paredes</title>
-</head>
-<body>
-    <h4 id="portfoliotitle">PORTFOLIO <span>2024</span> </h4>
+  </head>
+  <body>
+    <h4 id="portfoliotitle">PORTFOLIO <span>2024</span></h4>
     <header>
-        <div id="profilepic"><a href="index.html"><img src="images/header-profilepic.jpg" alt="Roger Paredes Pic" title="HOME"></a></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>           
-                <li><a href="about.html">About</a></li>
-                <li><button id="portfoliobtncurrent" type="button" onclick="dropdownmenu()">Portfolio</button>
-                    <ul id="dropdown">
-                        <li><a href="portfoliodesign.html">Graphic Design</a></li>
-                        <li><a href="portfoliovideo.html">Content Creation</a></li>
-                        <li><a href="portfolioweb.html">Web & IT</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+      <div id="profilepic">
+        <a href="index.html"
+          ><img
+            src="images/header-profilepic.jpg"
+            alt="Roger Paredes Pic"
+            title="HOME"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <button
+              id="portfoliobtncurrent"
+              type="button"
+              onclick="dropdownmenu()"
+            >
+              Portfolio
+            </button>
+            <ul id="dropdown">
+              <li><a href="portfoliodesign.html">Graphic Design</a></li>
+              <li><a href="portfoliovideo.html">Content Creation</a></li>
+              <li><a href="portfolioweb.html">Web & IT</a></li>
             </ul>
-        </nav>
-       
-        <div id="subtitles">
-            <h1 class="name">Roger <span>Paredes</span></h1>
-            <ul>
-                <li><span>//</span> Graphic Designer</li>
-                <li><span>//</span> Content Creator</li>
-                <li><span>//</span> IT Student</li>
-            </ul>
-        </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
+      <div id="subtitles">
+        <h1 class="name">Roger <span>Paredes</span></h1>
+        <ul>
+          <li><span>//</span> Graphic Designer</li>
+          <li><span>//</span> Content Creator</li>
+          <li><span>//</span> IT Student</li>
+        </ul>
+      </div>
     </header>
-    
+
     <main class="container">
-        <section id="title">
-            <h3>>PORTFOLIO<span>/////</span></h3>
-            
-        </section>
-        <section class="portfoliocontent">
-            <h5>>>Graphic Design</h5>
-            <p>Some of my work on <strong>graphic design</strong>.                             
+      <section id="title">
+        <h3>>PORTFOLIO<span>/////</span></h3>
+      </section>
+      <section class="portfoliocontent">
+        <h5>>>Graphic Design</h5>
+        <p>Some of my work on <strong>graphic design</strong>.</p>
+        <div class="portfoliocase">
+          <div
+            class="portexample"
+            id="vfootprint_ui_vidbtn"
+            onclick="vfootprintvid()"
+          >
+            <img
+              src="images/GDesign_VFootprint_UI_Thumb.jpg"
+              alt="V Footprint UI"
+            />
+            <p>UI design for the web application VFootprint.com, 2024.</p>
+            <div class="specs">CREATED WITH FIGMA</div>
+          </div>
+
+          <div class="portexample" id="costravidbtn" onclick="costravid()">
+            <img src="images/GDesign_CostrareelThumb.jpg" alt="Costra Reel" />
+            <p>
+              The 2021 costra strategy & communication reel, not so up to date,
+              but still pretty cool.
             </p>
-                <div class="portfoliocase">
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                    <div class="portexample" id="costravidbtn" onclick="costravid()">
-                        <img src="images/GDesign_CostrareelThumb.jpg" alt="Costra Reel">
-                        <p>The 2021 costra strategy & communication reel, not so up to date, but still pretty cool.
-                        </p>
-                        <div class="specs">CREATED WITH ADOBE CS</div> 
-                    </div>
-                
-                    <div class="portexample" id="apexbtn">
-                    
-                        <img src="images/GDesign_Apex.jpg" alt="Social Media Management">
-                        <p>Social media content creation and advertising management for Apex - Ecuador.
-                        </p>
-                        <div class="specs">ADOBE CS + HOOTSUITE</div> 
-                        
-                    </div>
+          <div class="portexample" id="apexbtn">
+            <img src="images/GDesign_Apex.jpg" alt="Social Media Management" />
+            <p>
+              Social media content creation and advertising management for Apex
+              - Ecuador.
+            </p>
+            <div class="specs">ADOBE CS + HOOTSUITE</div>
+          </div>
 
+          <div class="portexample">
+            <a
+              href="https://www.redbubble.com/people/apocalypsisopus/shop"
+              target="_blank"
+            >
+              <img src="images/GDesign_TshirtThumb.jpg" alt="Apparel Design" />
+              <p>
+                An array of T-shirt, apparel and merch applicable designs of all
+                sorts.
+              </p>
+              <div class="specs">CREATED WITH ADOBE CS</div>
+            </a>
+          </div>
 
-                <div class="portexample">
-                    <a href="https://www.redbubble.com/people/apocalypsisopus/shop" target="_blank">
-                    <img src="images/GDesign_TshirtThumb.jpg" alt="Apparel Design">
-                    <p>An array of T-shirt, apparel and merch applicable designs of all sorts.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    </a>
-                </div>
+          <div class="portexample" id="rumibtn">
+            <img
+              src="images/GDesign_RumisamaiThumb.jpg"
+              alt="Rumisamai branding"
+            />
+            <p>
+              Branding and packaging design for a food company with products
+              like black garlic based in Ecuador.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                <div class="portexample" id="rumibtn">
-                    
-                    <img src="images/GDesign_RumisamaiThumb.jpg" alt="Rumisamai branding">
-                    <p>Branding and packaging design for a food company with products like black garlic based in Ecuador.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
+          <div class="portexample" id="reflexbtn">
+            <img
+              src="images/GDesign_AnimalistasThumb.jpg"
+              alt="Animalistas Book Cover"
+            />
+            <p>
+              Book cover design for an animal liberation publication featuring
+              ecology + animal activists.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                <div class="portexample" id="reflexbtn">
-                    
-                    <img src="images/GDesign_AnimalistasThumb.jpg" alt="Animalistas Book Cover">
-                    <p>Book cover design for an animal liberation publication featuring ecology + animal activists.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
+          <div class="portexample" id="seastarbtn">
+            <img
+              src="images/GDesign_SeamanBookletThumb.jpg"
+              alt="Touristic brochure"
+            />
+            <p>
+              Branding, editorial, merch, adverising + for luxury tourism yatchs
+              in Galapagos Islands - Ecuador.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CSE</div>
+          </div>
 
-                <div class="portexample" id="seastarbtn">
-                    
-                    <img src="images/GDesign_SeamanBookletThumb.jpg" alt="Touristic brochure">
-                    <p>Branding, editorial, merch, adverising + for luxury tourism yatchs in Galapagos Islands - Ecuador.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CSE</div> 
-                    
-                </div>
+          <div class="portexample" id="investmentbtn">
+            <img
+              src="images/GDesign_InvestmentCatalogue.jpg"
+              alt="Investment Catalogue"
+            />
+            <p>
+              Investment catalogue editorial and packaging design for Strategic
+              Sectors of the Ecuadorian Government.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                                <div class="portexample" id="investmentbtn">
-                    
-                    <img src="images/GDesign_InvestmentCatalogue.jpg" alt="Investment Catalogue">
-                    <p>Investment catalogue editorial and packaging design for Strategic Sectors of the Ecuadorian Government.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
+          <div class="portexample" id="pantallabtn">
+            <img
+              src="images/GDesign_PantallaNomThumb.jpg"
+              alt="Branding Pantalla Nomada"
+            />
+            <p>
+              Corporate image design for tech company Pantalla Nómada - Ecuador.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                <div class="portexample" id="pantallabtn">
-                    
-                    <img src="images/GDesign_PantallaNomThumb.jpg" alt="Branding Pantalla Nomada">
-                    <p>Corporate image design for tech company Pantalla Nómada - Ecuador.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
+          <div class="portexample" id="age-resurgencebtn">
+            <img
+              src="images/GDesign_AgeOfResur.jpg"
+              alt="Branding Age of Resurgence"
+            />
+            <p>
+              Corp. Image design for video game Age of Resurgence and Chariot
+              Entertainment - Ecuador.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                <div class="portexample" id="age-resurgencebtn">
-                    
-                    <img src="images/GDesign_AgeOfResur.jpg" alt="Branding Age of Resurgence">
-                    <p>Corp. Image design for video game Age of Resurgence and Chariot Entertainment - Ecuador.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
+          <div class="portexample" id="ecusouthbtn">
+            <img
+              src="images/GDesign_EcuadorSouthThumb.jpg"
+              alt="Ecuador South Experience Brand"
+            />
+            <p>
+              Corp. Image for an ecuadorian touristic agency specialized on true
+              cultural in-depth experiences.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                <div class="portexample" id="ecusouthbtn">
-                    
-                    <img src="images/GDesign_EcuadorSouthThumb.jpg" alt="Ecuador South Experience Brand">
-                    <p>Corp. Image for an ecuadorian touristic agency specialized on true cultural in-depth experiences.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
+          <div class="portexample" id="mardisbtn">
+            <img
+              src="images/GDesign_MardisThumb.jpg"
+              alt="Social Media Management"
+            />
+            <p>
+              Brand portfolio, interiors & advertising for Mardis, Marketing &
+              Research agency - Ecuador.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
+          <div class="portexample" id="purebtn">
+            <img src="images/GDesign_PureThumb.jpg" alt="Advertising" />
+            <p>
+              UI Design and Mock Ups for Pure Ecuador + Pure Bolivia, tourism
+              agency - Ecuador.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                <div class="portexample" id="mardisbtn">
-                    
-                    <img src="images/GDesign_MardisThumb.jpg" alt="Social Media Management">
-                    <p>Brand portfolio, interiors & advertising for Mardis, Marketing & Research agency - Ecuador.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
+          <div class="portexample" id="yachaybtn">
+            <img src="images/GDesign_YachayThumb.jpg" alt="Branding" />
+            <p>
+              Brand plattform, corp. image, graphic system + for Yachay Public
+              University - Ecuador.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                <div class="portexample" id="purebtn">
-                    
-                    <img src="images/GDesign_PureThumb.jpg" alt="Advertising">
-                    <p> UI Design and Mock Ups for Pure Ecuador + Pure Bolivia, tourism agency - Ecuador.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
+          <div class="portexample" id="equinoctialbtn">
+            <img
+              src="images/GDesign_EquinoctialThumb.jpg"
+              alt="Equinoctial Services"
+            />
+            <p>
+              UI Design, Mock Ups and Corporative image for Equinoctial Suites &
+              Offices - Ecuador.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
 
-                <div class="portexample" id="yachaybtn">
-                    
-                    <img src="images/GDesign_YachayThumb.jpg" alt="Branding">
-                    <p>Brand plattform, corp. image, graphic system + for Yachay Public University - Ecuador.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
-
-                <div class="portexample" id="equinoctialbtn">
-                    
-                    <img src="images/GDesign_EquinoctialThumb.jpg" alt="Equinoctial Services">
-                    <p> UI Design, Mock Ups and Corporative image for Equinoctial Suites & Offices - Ecuador.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
-
-                <div class="portexample" id="rcbbtn">
-                    
-                    <img src="images/GDesign_RCB.jpg" alt="Advertising">
-                    <p>Corporative image, advertising campaigns, editorial + for Raúl Coka Barriga Insurance - Ecuador.
-                    </p>
-                    <div class="specs">CREATED WITH ADOBE CS</div> 
-                    
-                </div>
-
-                
-
-            </div>
-
-        </section>
-
-        <div id="port-popup">
-            <div id="popup-controls">
-                <button type="button" id="next" onclick="nextSlide()"> > </button>
-                <button type="button" id="prev"> &#60; </button>
-                <button type="button" id="closebtn" title="Close" > x </button>
-            
-                <div id="popup-content" > 
-                    <img class="popimg" src="" alt="Portfolio">
-                </div> 
-                <div id="player">
-                    
-                </div>
-            </div>
+          <div class="portexample" id="rcbbtn">
+            <img src="images/GDesign_RCB.jpg" alt="Advertising" />
+            <p>
+              Corporative image, advertising campaigns, editorial + for Raúl
+              Coka Barriga Insurance - Ecuador.
+            </p>
+            <div class="specs">CREATED WITH ADOBE CS</div>
+          </div>
         </div>
-        
+      </section>
 
+      <div id="port-popup">
+        <div id="popup-controls">
+          <button type="button" id="next" onclick="nextSlide()">></button>
+          <button type="button" id="prev">&#60;</button>
+          <button type="button" id="closebtn" title="Close">x</button>
+
+          <div id="popup-content">
+            <img class="popimg" src="" alt="Portfolio" />
+          </div>
+          <div id="player"></div>
+        </div>
+      </div>
     </main>
     <footer>
-        <p>
-            © ROGER PAREDES 2024
-        </p>
+      <p>© ROGER PAREDES 2024</p>
     </footer>
-    
+
     <div class="video_contain">
-        <video autoplay muted loop id="myVideo">
-            <source src="video/BackgroundVideo.mp4" type="video/mp4">
-        </video>
+      <video autoplay muted loop id="myVideo">
+        <source src="video/BackgroundVideo.mp4" type="video/mp4" />
+      </video>
     </div>
-    
-</body>
+  </body>
 </html>
