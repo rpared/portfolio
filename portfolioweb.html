@@ -1,170 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Roger Paredes' personal portfolio">
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Roger Paredes' personal portfolio" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="web.js" defer></script>
     <title>Portfolio - Roger Paredes</title>
-</head>
-<body>
-    <h4 id="portfoliotitle">PORTFOLIO <span>2024</span> </h4>
+  </head>
+  <body>
+    <h4 id="portfoliotitle">PORTFOLIO <span>2024</span></h4>
     <header>
-        <div id="profilepic"><a href="index.html"><img src="images/header-profilepic.jpg" alt="Roger Paredes Pic" title="HOME"></a></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>           
-                <li><a href="about.html">About</a></li>
-                <li><button id="portfoliobtncurrent" type="button" onclick="dropdownmenu()">Portfolio</button>
-                    <ul id="dropdown">
-                        <li><a href="portfoliodesign.html">Graphic Design</a></li>
-                        <li><a href="portfoliovideo.html">Content Creation</a></li>
-                        <li><a href="portfolioweb.html">Web & IT</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+      <div id="profilepic">
+        <a href="index.html"
+          ><img
+            src="images/header-profilepic.jpg"
+            alt="Roger Paredes Pic"
+            title="HOME"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <button
+              id="portfoliobtncurrent"
+              type="button"
+              onclick="dropdownmenu()"
+            >
+              Portfolio
+            </button>
+            <ul id="dropdown">
+              <li><a href="portfoliodesign.html">Graphic Design</a></li>
+              <li><a href="portfoliovideo.html">Content Creation</a></li>
+              <li><a href="portfolioweb.html">Web & IT</a></li>
             </ul>
-        </nav>
-       
-        <div id="subtitles">
-            <h1 class="name">Roger <span>Paredes</span></h1>
-            <ul>
-                <li><span>//</span> Graphic Designer</li>
-                <li><span>//</span> Content Creator</li>
-                <li><span>//</span> IT Student</li>
-            </ul>
-        </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
+      <div id="subtitles">
+        <h1 class="name">Roger <span>Paredes</span></h1>
+        <ul>
+          <li><span>//</span> Graphic Designer</li>
+          <li><span>//</span> Content Creator</li>
+          <li><span>//</span> IT Student</li>
+        </ul>
+      </div>
     </header>
-    
+
     <main class="container">
-        <section id="title">
-            <h3>>PORTFOLIO<span>/////</span></h3>
-            
-        </section>
-        <section class="portfoliocontent">
-            <h5>>>Web and IT projects</h5>
-            <p>Some of my work on <strong>web design </strong>and <strong>IT</strong>.                             
+      <section id="title">
+        <h3>>PORTFOLIO<span>/////</span></h3>
+      </section>
+      <section class="portfoliocontent">
+        <h5>>>Web and IT projects</h5>
+        <p>
+          Some of my work on <strong>web design </strong>and
+          <strong>IT</strong>.
+        </p>
+        <div class="portfoliocase">
+          <div class="portexample">
+            <a href="https://www.vfootprint.com" target="_blank">
+              <img src="images/Web_VFootprintThumb.jpg" alt="V Footprint App" />
+              <p>
+                A web app to calculate who much a vegan saves through time:
+                Animals, CO2, Water and Grain.
+              </p>
+              <div class="specs">HTML + CSS + JAVASCRIPT</div>
+            </a>
+          </div>
+
+          <div class="portexample">
+            <a href="https://animalkillstats.com/" target="_blank">
+              <img
+                src="images/Web_AKillStatsThumb.jpg"
+                alt="Animal Kill Stats Website"
+              />
+              <p>
+                A website with statistics on the animal holocaust, it can filter
+                countries and animal species.
+              </p>
+              <div class="specs">HTML + CSS + JAVASCRIPT</div>
+            </a>
+          </div>
+
+          <div class="portexample">
+            <a href="https://www.freshiescanada.com" target="_blank">
+              <img
+                src="images/Web_FreshiesThumb.jpg"
+                alt="Freshies in Canada Website"
+              />
+              <p>
+                A website for international students arriving to Toronto.
+                Documents, transportation, tips, and more.
+              </p>
+              <div class="specs">HTML + CSS + JAVASCRIPT</div>
+            </a>
+          </div>
+
+          <div class="portexample">
+            <a href="https://www.apocalypsisopus.com/" target="_blank">
+              <img
+                src="images/Web_AopusThumb.jpg"
+                alt="Apcalypsis Opus Website"
+              />
+              <p>
+                The official website for Apocalypsis Opus, a video series I
+                created on freedom and philosophy.
+              </p>
+              <div class="specs">JOOMLA</div>
+            </a>
+          </div>
+
+          <div class="portexample">
+            <a href="https://www.costra.ec/" target="_blank">
+              <img src="images/Web_CostraThumb.jpg" alt="Costra Website" />
+              <p>
+                Costra, communication & strategy, a feelance design agency I run
+                with partners for over 10 years.
+              </p>
+              <div class="specs">WORDPRESS</div>
+            </a>
+          </div>
+
+          <div class="portexample" id="hangmangame">
+            <!-- <a href="https://github.com/rpared/hangmangame.git" target="_blank"> -->
+            <img src="images/Web_javHangmanThumb.jpg" alt="Java Hangman Game" />
+            <p>
+              A JAVA Hangman Game, GUI built with Java Swing libraries, it reads
+              and writes an external txt file.
             </p>
-                <div class="portfoliocase">
+            <div class="specs">JAVA</div>
+            <!-- </a> -->
+          </div>
 
-                <div class="portexample">
-                    <a href="https://www.vfootprint.com" target="_blank">
-                    <img src="images/Web_VFootprintThumb.jpg" alt="V Footprint App">
-                    <p>A web app to calculate who much a vegan saves through time: Animals, CO2, Water and Grain.
-                    </p>
-                    <div class="specs">HTML + CSS + JAVASCRIPT</div> 
-                    </a>
-                </div>
-    
+          <div class="portexample">
+            <a href="https://youtu.be/02UfyWWx2U0" target="_blank">
+              <img
+                src="images/Web_JavaDoubleCalculator.jpg"
+                alt="Java Program"
+              />
+              <p>
+                A menu driven JAVA program with a double calculator for
+                currency, simple and compound interest.
+              </p>
+              <div class="specs">JAVA</div>
+            </a>
+          </div>
 
+          <div class="portexample">
+            <a href="https://roger.costra.ec" target="_blank">
+              <img src="images/Web_RogersProfile.jpg" alt="Javascrpt Profile" />
+              <p>
+                An online single page profile with language and background
+                switches, built with javascript.
+              </p>
+              <div class="specs">HTML + CSS + JAVASCRIPT</div>
+            </a>
+          </div>
 
-                <div class="portexample">
-                    <a href="https://www.freshiescanada.com" target="_blank">
-                    <img src="images/Web_FreshiesThumb.jpg" alt="Freshies in Canada Website">
-                    <p>A website for international students arriving to Toronto. Documents, transportation, tips, and more.
-                    </p>
-                    <div class="specs">HTML + CSS + JAVASCRIPT</div> 
-                    </a>
-                </div>
+          <div class="portexample" id="produbtn">
+            <!--onclick="produ()"-->
 
-                <div class="portexample">
-                    <a href="https://animalkillstats.apocalypsisopus.com/" target="_blank">
-                    <img src="images/Web_AKillStatsThumb.jpg" alt="Animal Kill Stats Website">
-                    <p>A website with statistics on the animal holocaust, it can filter countries and animal species. </p>
-                    <div class="specs">HTML + CSS + JAVASCRIPT</div>
-                    </a>
-                </div>
-
-                <div class="portexample">
-                    <a href="https://www.apocalypsisopus.com/" target="_blank">
-                    <img src="images/Web_AopusThumb.jpg" alt="Apcalypsis Opus Website">
-                    <p>The official website for Apocalypsis Opus, a video series I created on freedom and philosophy.</p>
-                    <div class="specs">JOOMLA</div>
-                </a>
-                </div>
-
-                <div class="portexample">
-                    <a href="https://www.costra.ec/" target="_blank">
-                    <img src="images/Web_CostraThumb.jpg" alt="Costra Website">
-                    <p>Costra, communication & strategy, a feelance design agency I run with partners for over 10 years.</p>
-                    <div class="specs">WORDPRESS</div>
-                    </a>
-                </div>
-
-                <div class="portexample" id="hangmangame">
-                    <!-- <a href="https://github.com/rpared/hangmangame.git" target="_blank"> -->
-                    <img src="images/Web_javHangmanThumb.jpg" alt="Java Hangman Game">
-                    <p>A JAVA Hangman Game, GUI built with Java Swing libraries, it reads and writes an external txt file.</p>
-                    <div class="specs">JAVA</div>
-                    <!-- </a> -->
-                </div>
-
-                <div class="portexample">
-                    <a href="https://youtu.be/02UfyWWx2U0" target="_blank">
-                    <img src="images/Web_JavaDoubleCalculator.jpg" alt="Java Program">
-                    <p>A menu driven JAVA program with a double calculator for currency, simple and compound interest.</p>
-                    <div class="specs">JAVA</div>
-                    </a>
-                </div>
-
-                <div class="portexample" >
-                    <a href="https://roger.costra.ec" target="_blank">
-                    <img src="images/Web_RogersProfile.jpg" alt="Javascrpt Profile">
-                    <p>An online single page profile with language and background switches, built with javascript.</p>
-                    <div class="specs">HTML + CSS + JAVASCRIPT</div>
-                    </a>
-                </div>
-
-                <div class="portexample" id="produbtn">  <!--onclick="produ()"-->
-                    
-                    <img src="images/GDesign_Produbanco.jpg" alt="Flash Tutorial">
-                    <p>Several actionscript tutorials for Produbanco bank applications in Ecuador.</p>
-                    <div class="specs">FLASH + ACTIONSCRIPT</div>
-                    
-                </div>
-                
-
+            <img src="images/GDesign_Produbanco.jpg" alt="Flash Tutorial" />
+            <p>
+              Several actionscript tutorials for Produbanco bank applications in
+              Ecuador.
+            </p>
+            <div class="specs">FLASH + ACTIONSCRIPT</div>
+          </div>
         </div>
+      </section>
 
-        </section>
+      <div id="port-popup">
+        <div id="popup-controls">
+          <button type="button" id="next" onclick="nextSlide()">></button>
+          <button type="button" id="prev" onclick="prevSlide()">&#60;</button>
+          <button type="button" id="closebtn" title="Close">x</button>
 
-        <div id="port-popup">
-            <div id="popup-controls">
-                <button type="button" id="next" onclick="nextSlide()"> > </button>
-                <button type="button" id="prev" onclick="prevSlide()"> &#60; </button>
-                <button type="button" id="closebtn" title="Close" > x </button>
-            
-                <div id="popup-content" > 
-                    <img class="popimg" src="" alt="Portfolio">
-                </div> 
-                <div id="player">
-                    
-                </div>
-            </div>
+          <div id="popup-content">
+            <img class="popimg" src="" alt="Portfolio" />
+          </div>
+          <div id="player"></div>
         </div>
-
-
+      </div>
     </main>
     <footer>
-        <p>
-            © ROGER PAREDES 2024
-        </p>
+      <p>© ROGER PAREDES 2024</p>
     </footer>
-    
+
     <div class="video_contain">
-        <video autoplay muted loop id="myVideo">
-            <source src="video/BackgroundVideo.mp4" type="video/mp4">
-        </video>
+      <video autoplay muted loop id="myVideo">
+        <source src="video/BackgroundVideo.mp4" type="video/mp4" />
+      </video>
     </div>
-    
-</body>
+  </body>
 </html>
