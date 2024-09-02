@@ -337,6 +337,22 @@ h3 span {
   color: #ff8200;
   box-shadow: 1px 2px 5px #545454;
 }
+
+.tech-logos {
+  filter: invert();
+  filter: brightness(0.6);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.tech-logos img {
+  max-height: 40px;
+  object-fit: contain;
+  max-width: 55px;
+  padding: 2px;
+}
 /* PORTFOLIO SECTION */
 .portfoliocontent {
   padding: 20px 25px;
