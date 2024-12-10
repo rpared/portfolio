@@ -376,12 +376,12 @@ h3 span {
 }
 
 .portexample {
-  background-color: #fff;
+  background-color: #eeeeee;
   width: 300px;
   height: 310px;
   box-shadow: 0 0 3px #616161;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 4px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -389,6 +389,7 @@ h3 span {
 .portexample img {
   width: 100%;
   object-fit: contain;
+
 }
 .portfoliocase p {
   padding: 10px;
@@ -405,6 +406,7 @@ h3 span {
   background-color: #9f9f9f;
   color: #fff;
   font-size: 0.9em;
+  box-shadow: 0 1px 3px #6e6e6e;
 }
 
 .portfoliocase a {
