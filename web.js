@@ -11,6 +11,15 @@ function dropdownmenu() {
   }
 }
 
+//Year
+document.addEventListener("DOMContentLoaded", function() {
+  var currentYear = new Date().getFullYear();
+  var yearElements = document.querySelectorAll(".year");
+  yearElements.forEach(function(element) {
+    element.textContent = currentYear;
+  });
+});
+
 //PORTFOLIO Pop Up
 var popUp = document.querySelector("#port-popup");
 let popUpContent = document.querySelector("#popup-content");

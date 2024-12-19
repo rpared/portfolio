@@ -1,6 +1,7 @@
 let menuDisplay = false;
 let dropDownMenu = document.getElementById("dropdown");
 
+
 function dropdownmenu() {
   if (menuDisplay == false) {
     dropDownMenu.style.display = "flex";
@@ -10,6 +11,15 @@ function dropdownmenu() {
     menuDisplay = false;
   }
 }
+
+//Year
+document.addEventListener("DOMContentLoaded", function() {
+  var currentYear = new Date().getFullYear();
+  var yearElements = document.querySelectorAll(".year");
+  yearElements.forEach(function(element) {
+    element.textContent = currentYear;
+  });
+});
 
 //PORTFOLIO Pop Up
 var popUp = document.querySelector("#port-popup");
@@ -29,6 +39,8 @@ document.getElementById("closebtn").addEventListener("click", function () {
     "player"
   ).innerHTML = `<iframe width="650px" height="480px"src=""></iframe>`;
 });
+
+
 
 // PORTFOLIO BUTTONS
 function vfootprintvid() {
@@ -421,3 +433,5 @@ popUp.addEventListener("click", function (event) {
     prevBtn.style.display = "block";
   }
 });
+
+
