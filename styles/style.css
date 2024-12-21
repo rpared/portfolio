@@ -318,6 +318,7 @@ h3 span {
 .aboutcontent img {
   margin: 15px 0;
   width: 100%;
+  clip-path: inset(0 0 2px 0);
 }
 #regbutton {
   text-align: center;
