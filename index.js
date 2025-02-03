@@ -80,6 +80,26 @@ function costravid() {
   ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/olBVt3xlsTA?controls=1"></iframe>`;
 }
 
+function tarjetarojavid() {
+  popUp.style.display = "flex";
+  nextBtn.style.display = "none";
+  prevBtn.style.display = "none";
+  document.getElementById("player").style.display = "flex";
+  portMode = "costravid";
+  popUpImg.src = "";
+  popUpImg.alt = "";
+  document.getElementById(
+    "player"
+  ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/XXwmUF6pLnc?controls=1"></iframe>`;
+}
+
+
+document.getElementById("odysseybtn").addEventListener("click", function () {
+  popUp.style.display = "flex";
+  portMode = "odyssey";
+  popUpImg.src = "images/portfoliolargepics/godyssey1.png";
+});
+
 document.getElementById("rcbbtn").addEventListener("click", function () {
   popUp.style.display = "flex";
   portMode = "rcb";
@@ -176,6 +196,16 @@ function nextSlide() {
       popUpImg.src = "images/portfoliolargepics/FlowDiagram2.png";
     } else if (popUpImg.src.endsWith("FlowDiagram2.png")) {
       popUpImg.src = "images/portfoliolargepics/FlowDiagram1.png";
+    }
+  }
+
+  if (portMode == "odyssey") {
+    if (popUpImg.src.endsWith("godyssey1.png")) {
+      popUpImg.src = "images/portfoliolargepics/godyssey2.png";
+    } else if (popUpImg.src.endsWith("godyssey2.png")) {
+      popUpImg.src = "images/portfoliolargepics/godyssey3.png";
+    } else if (popUpImg.src.endsWith("godyssey3.png")) {
+      popUpImg.src = "images/portfoliolargepics/godyssey1.png";
     }
   }
 
@@ -320,6 +350,24 @@ function nextSlide() {
 
 // PREV BUTTON
 prevBtn.addEventListener("click", function () {
+
+  if (portMode == "interaction") {
+    if (popUpImg.src.endsWith("FlowDiagram1.png")) {
+      popUpImg.src = "images/portfoliolargepics/FlowDiagram2.png";
+    } else if (popUpImg.src.endsWith("FlowDiagram2.png")) {
+      popUpImg.src = "images/portfoliolargepics/FlowDiagram1.png";
+    }
+  }
+  if (portMode == "odyssey") {
+    if (popUpImg.src.endsWith("godyssey1.png")) {
+      popUpImg.src = "images/portfoliolargepics/godyssey3.png";
+    } else if (popUpImg.src.endsWith("godyssey2.png")) {
+      popUpImg.src = "images/portfoliolargepics/godyssey1.png";
+    } else if (popUpImg.src.endsWith("godyssey3.png")) {
+      popUpImg.src = "images/portfoliolargepics/godyssey2.png";
+    }
+  }
+
   if (portMode == "rcb") {
     if (popUpImg.src.endsWith("rcb1.png")) {
       popUpImg.src = "images/portfoliolargepics/rcb4.png";
