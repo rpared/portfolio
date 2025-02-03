@@ -43,6 +43,18 @@ document.getElementById("closebtn").addEventListener("click", function () {
 
 
 // PORTFOLIO BUTTONS
+function oraclelensvid() {
+  popUp.style.display = "flex";
+  nextBtn.style.display = "none";
+  prevBtn.style.display = "none";
+  document.getElementById("player").style.display = "flex";
+  portMode = "costravid";
+  popUpImg.src = "";
+  popUpImg.alt = "";
+  document.getElementById(
+    "player"
+  ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/aXnLaFSGINs?controls=1"></iframe>`;
+}
 function vfootprintvid() {
   popUp.style.display = "flex";
   nextBtn.style.display = "none";
@@ -150,9 +162,23 @@ document.getElementById("rumibtn").addEventListener("click", function () {
   popUpImg.src = "images/portfoliolargepics/rumi1.png";
 });
 
+document.getElementById("interactionbtn").addEventListener("click", function () {
+  popUp.style.display = "flex";
+  portMode = "interaction";
+  popUpImg.src = "images/portfoliolargepics/FlowDiagram1.png";
+});
+
 // Pop Up Buttons Functions
 // NEXT BUTTON
 function nextSlide() {
+  if (portMode == "interaction") {
+    if (popUpImg.src.endsWith("FlowDiagram1.png")) {
+      popUpImg.src = "images/portfoliolargepics/FlowDiagram2.png";
+    } else if (popUpImg.src.endsWith("FlowDiagram2.png")) {
+      popUpImg.src = "images/portfoliolargepics/FlowDiagram1.png";
+    }
+  }
+
   if (portMode == "produ") {
     if (popUpImg.src.endsWith("produ1.png")) {
       popUpImg.src = "images/portfoliolargepics/produ2.png";
