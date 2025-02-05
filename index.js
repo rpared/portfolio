@@ -93,6 +93,18 @@ function tarjetarojavid() {
   ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/XXwmUF6pLnc?controls=1"></iframe>`;
 }
 
+function presentationsvid() {
+  popUp.style.display = "flex";
+  nextBtn.style.display = "none";
+  prevBtn.style.display = "none";
+  document.getElementById("player").style.display = "flex";
+  portMode = "costravid";
+  popUpImg.src = "";
+  popUpImg.alt = "";
+  document.getElementById(
+    "player"
+  ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/B84_TtxoSAE?controls=1"></iframe>`;
+}
 
 document.getElementById("odysseybtn").addEventListener("click", function () {
   popUp.style.display = "flex";
