@@ -802,3 +802,55 @@ footer p {
     display: none;
   }
 }
+
+/* animations */
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+    }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+    }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.portexample{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+
+h3{
+  animation: slide 0.2s ease-in-out forwards;
+}
+
+.portfoliocontent, .aboutcontent{
+  animation: slideFromRight 0.2s ease-in-out forwards;
+}
