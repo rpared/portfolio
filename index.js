@@ -106,6 +106,25 @@ function presentationsvid() {
   ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/B84_TtxoSAE?controls=1"></iframe>`;
 }
 
+
+document.getElementById("sudavesabtn").addEventListener("click", function () {
+  popUp.style.display = "flex";
+  portMode = "sudavesa";
+  popUpImg.src = "images/portfoliolargepics/sudavesa1.png";
+});
+
+document.getElementById("latinbtn").addEventListener("click", function () {
+  popUp.style.display = "flex";
+  portMode = "latintrails";
+  popUpImg.src = "images/portfoliolargepics/latintrails1.png";
+});
+
+document.getElementById("credifebtn").addEventListener("click", function () {
+  popUp.style.display = "flex";
+  portMode = "credife";
+  popUpImg.src = "images/portfoliolargepics/credife1.png";
+});
+
 document.getElementById("odysseybtn").addEventListener("click", function () {
   popUp.style.display = "flex";
   portMode = "odyssey";
@@ -203,6 +222,35 @@ document.getElementById("interactionbtn").addEventListener("click", function () 
 // Pop Up Buttons Functions
 // NEXT BUTTON
 function nextSlide() {
+  
+  if (portMode == "sudavesa") {
+    if (popUpImg.src.endsWith("sudavesa1.png")) {
+      popUpImg.src = "images/portfoliolargepics/sudavesa2.png";
+    } else if (popUpImg.src.endsWith("sudavesa2.png")) {
+      popUpImg.src = "images/portfoliolargepics/sudavesa1.png";
+    }
+  }
+
+  if (portMode == "latintrails") {
+    if (popUpImg.src.endsWith("latintrails1.png")) {
+      popUpImg.src = "images/portfoliolargepics/latintrails2.png";
+    } else if (popUpImg.src.endsWith("latintrails2.png")) {
+      popUpImg.src = "images/portfoliolargepics/latintrails3.png";
+    } else if (popUpImg.src.endsWith("latintrails3.png")) {
+      popUpImg.src = "images/portfoliolargepics/latintrails4.png";
+    } else if (popUpImg.src.endsWith("latintrails4.png")) {
+      popUpImg.src = "images/portfoliolargepics/latintrails1.png";
+    }
+  }
+
+  if (portMode == "credife") {
+    if (popUpImg.src.endsWith("credife1.png")) {
+      popUpImg.src = "images/portfoliolargepics/credife2.png";
+    } else if (popUpImg.src.endsWith("credife2.png")) {
+      popUpImg.src = "images/portfoliolargepics/credife1.png";
+    }
+  }
+
   if (portMode == "interaction") {
     if (popUpImg.src.endsWith("FlowDiagram1.png")) {
       popUpImg.src = "images/portfoliolargepics/FlowDiagram2.png";
@@ -363,6 +411,33 @@ function nextSlide() {
 // PREV BUTTON
 prevBtn.addEventListener("click", function () {
 
+  if (portMode == "sudavesa") {
+    if (popUpImg.src.endsWith("sudavesa2.png")) {
+      popUpImg.src = "images/portfoliolargepics/sudavesa1.png";
+    } else if (popUpImg.src.endsWith("sudavesa1.png")) {
+      popUpImg.src = "images/portfoliolargepics/sudavesa2.png";
+    }
+  }
+
+  if (portMode == "latintrails") {
+    if (popUpImg.src.endsWith("latintrails4.png")) {
+      popUpImg.src = "images/portfoliolargepics/latintrails3.png";
+    } else if (popUpImg.src.endsWith("latintrails3.png")) {
+      popUpImg.src = "images/portfoliolargepics/latintrails2.png";
+    } else if (popUpImg.src.endsWith("latintrails2.png")) {
+      popUpImg.src = "images/portfoliolargepics/latintrails1.png";
+    } else if (popUpImg.src.endsWith("latintrails1.png")) {
+      popUpImg.src = "images/portfoliolargepics/latintrails4.png";
+    }
+  }
+
+  if (portMode == "credife") {
+    if (popUpImg.src.endsWith("credife2.png")) {
+      popUpImg.src = "images/portfoliolargepics/credife1.png";
+    } else if (popUpImg.src.endsWith("credife1.png")) {
+      popUpImg.src = "images/portfoliolargepics/credife2.png";
+    }
+  }
   if (portMode == "interaction") {
     if (popUpImg.src.endsWith("FlowDiagram1.png")) {
       popUpImg.src = "images/portfoliolargepics/FlowDiagram2.png";

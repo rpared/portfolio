@@ -95,8 +95,26 @@ document
   .getElementById("meatprediction")
   .addEventListener("click", meatprediction);
 
+  document.getElementById("aopusshopbtn").addEventListener("click", function () {
+    popUp.style.display = "flex";
+    portMode = "aopusshop";
+    popUpImg.src = "images/portfoliolargepics/aopusshop1.png";
+  });
+
 // Pop Up Buttons Functions
 function nextSlide() {
+
+  if (portMode == "aopusshop") {
+    if (popUpImg.src.endsWith("aopusshop1.png")) {
+      popUpImg.src = "images/portfoliolargepics/aopusshop2.png";
+    } else if (popUpImg.src.endsWith("aopusshop2.png")) {
+      popUpImg.src = "images/portfoliolargepics/aopusshop3.png";
+    } else if (popUpImg.src.endsWith("aopusshop3.png")) {
+      popUpImg.src = "images/portfoliolargepics/aopusshop1.png";
+    }
+  }
+
+
   if (portMode == "hangman") {
     if (popUpImg.src.endsWith("hangman1.png")) {
       popUpImg.src = "images/portfoliolargepics/hangman2.png";
@@ -234,6 +252,17 @@ function nextSlide() {
 // PREV BUTTON
 // function for web&It
 function prevSlide() {
+
+  if (portMode == "aopusshop") {
+    if (popUpImg.src.endsWith("aopusshop3.png")) {
+      popUpImg.src = "images/portfoliolargepics/aopusshop2.png";
+    } else if (popUpImg.src.endsWith("aopusshop2.png")) {
+      popUpImg.src = "images/portfoliolargepics/aopusshop1.png";
+    } else if (popUpImg.src.endsWith("aopusshop1.png")) {
+      popUpImg.src = "images/portfoliolargepics/aopusshop3.png";
+    }
+  }
+
   if (portMode == "hangman") {
     if (popUpImg.src.endsWith("hangman1.png")) {
       popUpImg.src = "images/portfoliolargepics/hangman2.png";
