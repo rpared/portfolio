@@ -3,4 +3,4 @@ Disallow: /private/
 Disallow: /temp/
 Allow: /
 
-Sitemap: https://rpared.github.io/portfolio/sitemap.xml
+Sitemap: https://rogerparedes.com/sitemap.xml
