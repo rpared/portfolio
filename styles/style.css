@@ -335,8 +335,10 @@ h3 span {
   border-color: #767676;
 }
 #regbutton:hover {
-  color: rgb(199, 144, 122);
+  background-color: rgb(199, 144, 122);
   box-shadow: 1px 1px 4px #545454;
+  color: #fff;
+  border-color: rgb(199, 144, 122);
 }
 
 .tech-logos {

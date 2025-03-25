@@ -93,6 +93,22 @@ function tarjetarojavid() {
   ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/XXwmUF6pLnc?controls=1"></iframe>`;
 }
 
+
+
+function aopusprototypevid() {
+  popUp.style.display = "flex";
+  nextBtn.style.display = "none";
+  prevBtn.style.display = "none";
+  document.getElementById("player").style.display = "flex";
+  portMode = "costravid";
+  popUpImg.src = "";
+  popUpImg.alt = "";
+  document.getElementById(
+    "player"
+  ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/pRv8SsMGM6o?controls=1"></iframe>`;
+}
+
+
 function presentationsvid() {
   popUp.style.display = "flex";
   nextBtn.style.display = "none";
