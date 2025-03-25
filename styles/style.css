@@ -309,7 +309,7 @@ h3 span {
 .contactcontent h5 {
   font-style: italic;
   font-size: 1.5em;
-  margin: 0;
+  margin: 10px 0;
 }
 .aboutcontent li {
   list-style-type: disc;
