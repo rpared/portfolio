@@ -235,6 +235,24 @@ document.getElementById("interactionbtn").addEventListener("click", function () 
   popUpImg.src = "images/portfoliolargepics/FlowDiagram1.png";
 });
 
+document.getElementById("ancienteditorialbtn").addEventListener("click", function () {
+  popUp.style.display = "flex";
+  portMode = "ancienteditorial";
+  popUpImg.src = "images/portfoliolargepics/ancienteditorial1.png";
+});
+
+document.getElementById("ancientartconceptbtn").addEventListener("click", function () {
+  popUp.style.display = "flex";
+  portMode = "ancientartconcept";
+  popUpImg.src = "images/portfoliolargepics/ancientartconcept1.png";
+});
+
+document.getElementById("chillpackagingbtn").addEventListener("click", function () {
+  popUp.style.display = "flex";
+  portMode = "chillpackaging";
+  popUpImg.src = "images/portfoliolargepics/chillpackaging1.png";
+});
+
 // Pop Up Buttons Functions
 // NEXT BUTTON
 function nextSlide() {
@@ -422,6 +440,36 @@ function nextSlide() {
       popUpImg.src = "images/portfoliolargepics/rumi1.png";
     }
   }
+
+  if (portMode == "ancienteditorial") {
+    if (popUpImg.src.endsWith("ancienteditorial1.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancienteditorial2.png";
+    } else if (popUpImg.src.endsWith("ancienteditorial2.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancienteditorial3.png";
+    } else if (popUpImg.src.endsWith("ancienteditorial3.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancienteditorial1.png";
+    }
+  }
+
+  if (portMode == "ancientartconcept") {
+    if (popUpImg.src.endsWith("ancientartconcept1.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancientartconcept2.png";
+    } else if (popUpImg.src.endsWith("ancientartconcept2.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancientartconcept3.png";
+    } else if (popUpImg.src.endsWith("ancientartconcept3.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancientartconcept1.png";
+    }
+  }
+
+  if (portMode == "chillpackaging") {
+    if (popUpImg.src.endsWith("chillpackaging1.png")) {
+      popUpImg.src = "images/portfoliolargepics/chillpackaging2.png";
+    } else if (popUpImg.src.endsWith("chillpackaging2.png")) {
+      popUpImg.src = "images/portfoliolargepics/chillpackaging3.png";
+    } else if (popUpImg.src.endsWith("chillpackaging3.png")) {
+      popUpImg.src = "images/portfoliolargepics/chillpackaging1.png";
+    }
+  }
 }
 
 // PREV BUTTON
@@ -598,6 +646,37 @@ prevBtn.addEventListener("click", function () {
       popUpImg.src = "images/portfoliolargepics/rumi3.png";
     }
   }
+
+  if (portMode == "ancienteditorial") {
+    if (popUpImg.src.endsWith("ancienteditorial3.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancienteditorial2.png";
+    } else if (popUpImg.src.endsWith("ancienteditorial2.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancienteditorial1.png";
+    } else if (popUpImg.src.endsWith("ancienteditorial1.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancienteditorial3.png";
+    }
+  }
+
+  if (portMode == "ancientartconcept") {
+    if (popUpImg.src.endsWith("ancientartconcept3.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancientartconcept2.png";
+    } else if (popUpImg.src.endsWith("ancientartconcept2.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancientartconcept1.png";
+    } else if (popUpImg.src.endsWith("ancientartconcept1.png")) {
+      popUpImg.src = "images/portfoliolargepics/ancientartconcept3.png";
+    }
+  }
+
+  if (portMode == "chillpackaging") {
+    if (popUpImg.src.endsWith("chillpackaging3.png")) {
+      popUpImg.src = "images/portfoliolargepics/chillpackaging2.png";
+    } else if (popUpImg.src.endsWith("chillpackaging2.png")) {
+      popUpImg.src = "images/portfoliolargepics/chillpackaging1.png";
+    } else if (popUpImg.src.endsWith("chillpackaging1.png")) {
+      popUpImg.src = "images/portfoliolargepics/chillpackaging3.png";
+    }
+  }
+
 });
 
 // If user clicks outside the popup-controls element, hide it!
