@@ -5,7 +5,7 @@ body {
 }
 
 .video_contain {
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
   width: 100%;
@@ -243,7 +243,7 @@ nav ul li a:active {
 /*MAIN*/
 .container {
   margin: 20px auto;
-  width: 75%;
+  width: 62%;
   display: grid;
   grid-template-columns: auto 4fr;
   grid-template-areas: "title block1";
