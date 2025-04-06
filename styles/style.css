@@ -856,3 +856,15 @@ h3{
 .portfoliocontent, .aboutcontent{
   animation: slideFromRight 0.2s ease-in-out forwards;
 }
+
+.duration{
+  line-height: 2em;
+  color: #5a5a5a;
+}
+
+.duration::before {
+  content: "🕑"; /* Unicode for alarm clock */
+  font-size: 1em;
+  margin-right: 5px;
+  color: #5a5a5a;
+}
