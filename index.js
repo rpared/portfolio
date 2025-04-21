@@ -235,6 +235,12 @@ document.getElementById("interactionbtn").addEventListener("click", function () 
   popUpImg.src = "images/portfoliolargepics/FlowDiagram1.png";
 });
 
+document.getElementById("isenbeckbtn").addEventListener("click", function () {
+  popUp.style.display = "flex";
+  portMode = "isenbeck";
+  popUpImg.src = "images/portfoliolargepics/isenbeck1.png";
+});
+
 document.getElementById("ancienteditorialbtn").addEventListener("click", function () {
   popUp.style.display = "flex";
   portMode = "ancienteditorial";
@@ -470,6 +476,24 @@ function nextSlide() {
       popUpImg.src = "images/portfoliolargepics/chillpackaging1.png";
     }
   }
+
+  if (portMode == "isenbeck") {
+    if (popUpImg.src.endsWith("isenbeck1.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck2.png";
+    } else if (popUpImg.src.endsWith("isenbeck2.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck3.png";
+    } else if (popUpImg.src.endsWith("isenbeck3.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck4.png";
+    } else if (popUpImg.src.endsWith("isenbeck4.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck5.png";
+    } else if (popUpImg.src.endsWith("isenbeck5.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck6.png";
+    } else if (popUpImg.src.endsWith("isenbeck6.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck7.gif";
+    } else if (popUpImg.src.endsWith("isenbeck7.gif")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck1.png";
+    }
+  }
 }
 
 // PREV BUTTON
@@ -674,6 +698,24 @@ prevBtn.addEventListener("click", function () {
       popUpImg.src = "images/portfoliolargepics/chillpackaging1.png";
     } else if (popUpImg.src.endsWith("chillpackaging1.png")) {
       popUpImg.src = "images/portfoliolargepics/chillpackaging3.png";
+    }
+  }
+
+  if (portMode == "isenbeck") {
+    if (popUpImg.src.endsWith("isenbeck7.gif")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck6.png";
+    } else if (popUpImg.src.endsWith("isenbeck6.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck5.png";
+    } else if (popUpImg.src.endsWith("isenbeck5.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck4.png";
+    } else if (popUpImg.src.endsWith("isenbeck4.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck3.png";
+    } else if (popUpImg.src.endsWith("isenbeck3.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck2.png";
+    } else if (popUpImg.src.endsWith("isenbeck2.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck1.png";
+    } else if (popUpImg.src.endsWith("isenbeck1.png")) {
+      popUpImg.src = "images/portfoliolargepics/isenbeck7.gif";
     }
   }
 
