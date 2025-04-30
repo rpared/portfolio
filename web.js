@@ -101,6 +101,21 @@ document
     popUpImg.src = "images/portfoliolargepics/aopusshop1.png";
   });
 
+  document.getElementById("aopus_old_website").addEventListener("click", aopusoldwebsite);
+
+  function aopusoldwebsite() {
+    popUp.style.display = "flex";
+    nextBtn.style.display = "none";
+    prevBtn.style.display = "none";
+    document.getElementById("player").style.display = "flex";
+    portMode = "aopusoldwebsitevid";
+    popUpImg.src = "";
+    popUpImg.alt = "";
+    document.getElementById(
+      "player"
+    ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/Zufx-kOxViY?controls=1"></iframe>`;
+  }
+
 // Pop Up Buttons Functions
 function nextSlide() {
 
