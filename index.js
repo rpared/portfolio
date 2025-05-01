@@ -123,6 +123,20 @@ function presentationsvid() {
   ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/B84_TtxoSAE?controls=1"></iframe>`;
 }
 
+function apexvid() {
+  popUp.style.display = "flex";
+  nextBtn.style.display = "none";
+  prevBtn.style.display = "none";
+  document.getElementById("player").style.display = "flex";
+  portMode = "apexvid";
+  popUpImg.src = "";
+  popUpImg.alt = "";
+  document.getElementById(
+    "player"
+  ).innerHTML = `<iframe width="720px" height="480" src="https://www.youtube.com/embed/zj-CQNKCIt8?controls=1"></iframe>`;
+}
+
+
 
 document.getElementById("sudavesabtn").addEventListener("click", function () {
   popUp.style.display = "flex";
@@ -260,6 +274,10 @@ document.getElementById("chillpackagingbtn").addEventListener("click", function 
   popUpImg.src = "images/portfoliolargepics/chillpackaging1.png";
 });
 
+
+
+
+
 // Pop Up Buttons Functions
 // NEXT BUTTON
 function nextSlide() {
@@ -330,6 +348,7 @@ function nextSlide() {
     } else if (popUpImg.src.endsWith("rcb4.gif")) {
       popUpImg.src = "images/portfoliolargepics/rcb1.png";
     }
+    // https://youtu.be/Gjhx4Phm668
   }
 
   if (portMode == "equinoctial") {
@@ -392,6 +411,10 @@ function nextSlide() {
     } else if (popUpImg.src.endsWith("apex2.png")) {
       popUpImg.src = "images/portfoliolargepics/apex3.png";
     } else if (popUpImg.src.endsWith("apex3.png")) {
+      popUpImg.src = "images/portfoliolargepics/apex4.png";
+    }else if (popUpImg.src.endsWith("apex4.png")) {
+      popUpImg.src = "images/portfoliolargepics/apex5.png";
+    }else if (popUpImg.src.endsWith("apex5.png")) {
       popUpImg.src = "images/portfoliolargepics/apex1.png";
     }
   }
@@ -590,10 +613,14 @@ prevBtn.addEventListener("click", function () {
 
   if (portMode == "apex") {
     if (popUpImg.src.endsWith("apex1.png")) {
+      popUpImg.src = "images/portfoliolargepics/apex5.png";
+    } else if (popUpImg.src.endsWith("apex5.png")) {
+      popUpImg.src = "images/portfoliolargepics/apex4.png";
+    } else if (popUpImg.src.endsWith("apex4.png")) {
       popUpImg.src = "images/portfoliolargepics/apex3.png";
     } else if (popUpImg.src.endsWith("apex3.png")) {
       popUpImg.src = "images/portfoliolargepics/apex2.png";
-    } else if (popUpImg.src.endsWith("apex2.png")) {
+    }else if (popUpImg.src.endsWith("apex2.png")) {
       popUpImg.src = "images/portfoliolargepics/apex1.png";
     }
   }
