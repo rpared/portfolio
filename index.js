@@ -326,8 +326,8 @@ function nextSlide() {
     } else if (popUpImg.src.endsWith("rcb2.png")) {
       popUpImg.src = "images/portfoliolargepics/rcb3.png";
     } else if (popUpImg.src.endsWith("rcb3.png")) {
-      popUpImg.src = "images/portfoliolargepics/rcb4.png";
-    } else if (popUpImg.src.endsWith("rcb4.png")) {
+      popUpImg.src = "images/portfoliolargepics/rcb4.gif";
+    } else if (popUpImg.src.endsWith("rcb4.gif")) {
       popUpImg.src = "images/portfoliolargepics/rcb1.png";
     }
   }
@@ -348,6 +348,12 @@ function nextSlide() {
     } else if (popUpImg.src.endsWith("yachay3.png")) {
       popUpImg.src = "images/portfoliolargepics/yachay4.png";
     } else if (popUpImg.src.endsWith("yachay4.png")) {
+      popUpImg.src = "images/portfoliolargepics/yachay5.png";
+    } else if (popUpImg.src.endsWith("yachay5.png")) {
+      popUpImg.src = "images/portfoliolargepics/yachay6.png";
+    } else if (popUpImg.src.endsWith("yachay6.png")) {
+      popUpImg.src = "images/portfoliolargepics/yachay7.png";
+    } else if (popUpImg.src.endsWith("yachay7.png")) {
       popUpImg.src = "images/portfoliolargepics/yachay1.png";
     }
   }
@@ -546,8 +552,8 @@ prevBtn.addEventListener("click", function () {
 
   if (portMode == "rcb") {
     if (popUpImg.src.endsWith("rcb1.png")) {
-      popUpImg.src = "images/portfoliolargepics/rcb4.png";
-    } else if (popUpImg.src.endsWith("rcb4.png")) {
+      popUpImg.src = "images/portfoliolargepics/rcb4.gif";
+    } else if (popUpImg.src.endsWith("rcb4.gif")) {
       popUpImg.src = "images/portfoliolargepics/rcb3.png";
     } else if (popUpImg.src.endsWith("rcb3.png")) {
       popUpImg.src = "images/portfoliolargepics/rcb2.png";
@@ -566,6 +572,12 @@ prevBtn.addEventListener("click", function () {
 
   if (portMode == "yachay") {
     if (popUpImg.src.endsWith("yachay1.png")) {
+      popUpImg.src = "images/portfoliolargepics/yachay7.png";
+    } else if (popUpImg.src.endsWith("yachay7.png")) {
+      popUpImg.src = "images/portfoliolargepics/yachay6.png";
+    } else if (popUpImg.src.endsWith("yachay6.png")) {
+      popUpImg.src = "images/portfoliolargepics/yachay5.png";
+    } else if (popUpImg.src.endsWith("yachay5.png")) {
       popUpImg.src = "images/portfoliolargepics/yachay4.png";
     } else if (popUpImg.src.endsWith("yachay4.png")) {
       popUpImg.src = "images/portfoliolargepics/yachay3.png";
