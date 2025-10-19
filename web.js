@@ -50,6 +50,15 @@ function produ() {
 }
 document.getElementById("produbtn").addEventListener("click", produ);
 
+let fitform = () => {
+  popUp.style.display = "flex";
+  portMode = "fitform";
+  popUpImg.src = "images/portfoliolargepics/fitform1.png";
+};
+
+document.getElementById("fitform_website").addEventListener("click", fitform);
+
+
 //This was to link the button to github, but was troublesome
 // let hangman = () =>{
 //     popUp.style.display = "flex";
@@ -126,6 +135,16 @@ function nextSlide() {
       popUpImg.src = "images/portfoliolargepics/aopusshop3.png";
     } else if (popUpImg.src.endsWith("aopusshop3.png")) {
       popUpImg.src = "images/portfoliolargepics/aopusshop1.png";
+    }
+  }
+
+  if (portMode == "fitform") {
+    if (popUpImg.src.endsWith("fitform1.png")) {
+      popUpImg.src = "images/portfoliolargepics/fitform2.png";
+    } else if (popUpImg.src.endsWith("fitform2.png")) {
+      popUpImg.src = "images/portfoliolargepics/fitform3.png";
+    } else if (popUpImg.src.endsWith("fitform3.png")) {
+      popUpImg.src = "images/portfoliolargepics/fitform1.png";
     }
   }
 
@@ -276,6 +295,16 @@ function prevSlide() {
     } else if (popUpImg.src.endsWith("aopusshop1.png")) {
       popUpImg.src = "images/portfoliolargepics/aopusshop3.png";
     }
+  }
+
+    if (portMode == "fitform") {
+    if (popUpImg.src.endsWith("fitform3.png")) {
+      popUpImg.src = "images/portfoliolargepics/fitform2.png";
+    } else if (popUpImg.src.endsWith("fitform2.png")) {
+      popUpImg.src = "images/portfoliolargepics/fitform1.png";
+    } else if (popUpImg.src.endsWith("fitform1.png")) {
+      popUpImg.src = "images/portfoliolargepics/fitform3.png";
+    } 
   }
 
   if (portMode == "hangman") {
